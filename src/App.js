@@ -13,7 +13,7 @@ const App = () => (
     <Main />
   
     <Member />
-    {/* <Classes /> */}
+   
     <Schedule />
     <Trainers />
     <Contact />
@@ -21,3 +21,8 @@ const App = () => (
 );
 
 export default App;
+
+
+
+
+ /* <Classes /> */

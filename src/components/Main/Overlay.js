@@ -5,6 +5,8 @@ import React from "react";
 const Overlay = () => <div css={styles} className="overlay"></div>;
 
 const styles = css`
+ width: 100%;
+  height: 102vh;
   position: absolute;
   top: 0;
   right: 0;
