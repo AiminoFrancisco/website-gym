@@ -49,11 +49,14 @@ const Form = ({ text }) => (
         <div className="socialicon  ">
           <div className="socialiconcircle1 githubcolor"></div>
           <div className="socialiconcircle2">
+            <div>
             <FontAwesomeIcon
               className="icons"
-              color="#D4183A"
+             color="#C13584"
               icon={faInstagram}
             />
+            </div>
+           
           </div>
         </div>
         <div className="contactLinksGitHub">

@@ -32,7 +32,7 @@ const Member = ({ text }) => (
 
 const styles = css`
   width: 100%;
-  padding: 120px 0;
+  padding: 70px 0;
   text-align: center;
   background: url('${GymOverlayBg}') no-repeat center/cover;
 `;

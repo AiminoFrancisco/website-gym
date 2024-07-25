@@ -10,12 +10,19 @@ const Video = () => (
 );
 
 const styles = css`
-  min-width: 100%;
-  min-height: 100vh;
-  max-width: 100%;
-  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 768px) {
+    height: 100vh; /* Ajusta la altura para dispositivos móviles */
+    object-fit: cover; /* Mantiene la proporción del video */
+  }
 `;
 
 export default Video;

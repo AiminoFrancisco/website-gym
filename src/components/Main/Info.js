@@ -6,7 +6,7 @@ import logoHealth from "../Image/logoHealth.png";
 import dumbbellOrange from "../Image/dumbbellOrange.png";
 
 const Info = () => (
-  <div css={styles} className="info">
+  <div css={styles} className="info" >
     <img style={{marginTop:'20px'}} src={logoHealth} alt="HealtLogo" />
     <h1>
       MEJORAMOS TU ESTILO DE VIDA <span></span>
@@ -16,6 +16,7 @@ const Info = () => (
 );
 
 const styles = css`
+
   width: 100%;
   max-width: 900px;
   position: absolute;

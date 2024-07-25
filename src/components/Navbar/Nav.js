@@ -12,12 +12,7 @@ const Nav = () => {
     <nav css={styles}>
       <Container className="container">
         <Logo />
-        <i
-          onClick={() => setHidden(!hidden)}
-          className={hidden ? "fas fa-bars fa-lg" : "fas fa-times fa-lg"}
-          id="burgerMenu"
-        ></i>
-        <LinksContainer hidden={hidden} />
+     
       </Container>
     </nav>
   );

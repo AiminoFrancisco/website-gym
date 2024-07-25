@@ -42,7 +42,7 @@
     cursor: default;
   
     cursor: pointer;
-    border-bottom:1px solid  #E01028;
+    border-bottom:1px solid  #C13584;
   }
   .contactLinksWhatsapp{
     display: inline-block;
@@ -93,7 +93,7 @@
   }
   
   .github-link a:hover {
-    color: #E01028; /* Negro de GitHub */
+    color: #C13584; /* Negro de GitHub */
   }
   
   .whatsapp-link a:hover {
@@ -283,7 +283,7 @@
   .flickrcolor{background:#ff0084;}
   .pinterestcolor{background:#c8232c;}
   .youtubecolor{background:#c4302b;}
-  .githubcolor{background:#E01028;}
+  .githubcolor{background:linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);}
   .linkedincolor{background:#0e76a8;}
   .tumblrcolor{background:#34526f;}
   .whatsappcolor{background: #40BF50;}
