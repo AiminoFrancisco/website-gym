@@ -16,7 +16,7 @@ const ScheduleTable = () => {
           <td>Lunes</td>
           <td>
             <div className="hours">
-              <span className="open-hours">07:30 - 13:30</span> 
+              <span className="open-hours">07:30 - 12:30</span> 
               <span className="break">|</span> 
               <span className="open-hours">15:30 - 21:00</span>
             </div>
@@ -26,7 +26,7 @@ const ScheduleTable = () => {
           <td>Martes</td>
           <td>
             <div className="hours">
-              <span className="open-hours">07:30 - 13:30</span> 
+              <span className="open-hours">07:30 - 12:30</span> 
               <span className="break">|</span> 
               <span className="open-hours">15:30 - 21:00</span>
             </div>
@@ -36,7 +36,7 @@ const ScheduleTable = () => {
           <td>Miércoles</td>
           <td>
             <div className="hours">
-              <span className="open-hours">07:30 - 13:30</span> 
+              <span className="open-hours">07:30 - 12:30</span> 
               <span className="break">|</span> 
               <span className="open-hours">15:30 - 21:00</span>
             </div>
@@ -46,7 +46,7 @@ const ScheduleTable = () => {
           <td>Jueves</td>
           <td>
             <div className="hours">
-              <span className="open-hours">07:30 - 13:30</span> 
+              <span className="open-hours">07:30 - 12:30</span> 
               <span className="break">|</span> 
               <span className="open-hours">15:30 - 21:00</span>
             </div>
@@ -56,7 +56,7 @@ const ScheduleTable = () => {
           <td>Viernes</td>
           <td>
             <div className="hours">
-              <span className="open-hours">07:30 - 13:30</span> 
+              <span className="open-hours">07:30 - 12:30</span> 
               <span className="break">|</span> 
               <span className="open-hours">15:30 - 21:00</span>
             </div>
