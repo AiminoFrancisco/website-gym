@@ -41,7 +41,7 @@ const styles = css`
     color: #7a7a7a;
     font-size: 15px;
     font-weight: 400;
-    line-height: 1.7;
+ 
   }
   @media (max-width: 830px) {
     max-width: 540px;

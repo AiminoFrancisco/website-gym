@@ -11,18 +11,19 @@ import TrainerThreeBg from "../Image/trainerThree.jpg";
 const Trainers = () => (
   <section style={{backgroundColor:'#272F39'}} css={styles} className="trainers" id="trainers">
     <h2>
-    <span>TRAINERS</span>
+    <span>Profes</span>
     </h2>
 
     <Container>
       <TrainerCard
        name="Profe Joni"
-        title="Personal trainer"
+        title="Profesor de ed física"
         img={TrainerOneBg}
       />
        <TrainerCard
        name="Profe Luz"
-        title="Personal trainer"
+        title="Profesora de ed física"
+        desc='Estudiante de Kinesiología y Fisioterapia'
         img={TrainerTwoBg}
       />
     </Container>

@@ -6,7 +6,7 @@ import logoHealth from "../Image/logoHealth.png";
 const Logo = () => (
   <div css={containerStyles}>
     <h2 css={styles}>
-      Health <span>Training</span>
+      Health <span> & Training</span>
     </h2>
   </div>
 );
