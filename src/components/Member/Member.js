@@ -9,7 +9,7 @@ import Carousel from "./carrusel";
 const Member = () => (
   <section css={styles} className="member">
     <div css={contentStylesTitle}>
-      <h2>
+      <h2 style={{marginRight:'20px', marginLeft:'20px'}}>
         ¡NO LO <span className="highlight">PIENSAS</span>, EMPEZA <span className="highlight">HOY</span>!
       </h2>
     </div>
