@@ -10,22 +10,7 @@ import BackgroundImage3 from "../Image/pesas.jpg";
 import BackgroundImage4 from "../Image/pesas.jpg"; 
 import BackgroundImage5 from "../Image/pesas.jpg"; 
 
-// Definir las flechas personalizadas
-const NextArrow = ({ className, style, onClick }) => (
-  <div
-    className={className}
-    style={{ ...style, display: "block", background: "#fff", borderRadius: "50%", padding: "10px" }}
-    onClick={onClick}
-  />
-);
 
-const PrevArrow = ({ className, style, onClick }) => (
-  <div
-    className={className}
-    style={{ ...style, display: "block", background: "#fff", borderRadius: "50%", padding: "10px" }}
-    onClick={onClick}
-  />
-);
 
 const Carousel = () => {
   const settings = {
@@ -33,8 +18,8 @@ const Carousel = () => {
     centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
-    speed: 500,
-    autoplaySpeed: 3000,
+    speed: 2000,
+    autoplaySpeed: 12000,
     focusOnSelect: true,
   
     responsive: [
