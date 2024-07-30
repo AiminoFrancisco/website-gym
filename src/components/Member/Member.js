@@ -10,7 +10,7 @@ const Member = () => (
   <section css={styles} className="member">
     <div css={contentStylesTitle}>
       <h2>
-        ¡NO LO <span className="highlight">PIENSAS</span>, EMPIEZA <span className="highlight">HOY</span>!
+        ¡NO LO <span className="highlight">PIENSAS</span>, EMPEZA <span className="highlight">HOY</span>!
       </h2>
     </div>
     <div css={contentStyles}>
