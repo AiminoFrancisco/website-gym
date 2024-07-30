@@ -18,8 +18,8 @@ const Carousel = () => {
     centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 12000,
+    speed: 1300,
+    autoplaySpeed: 8000,
     focusOnSelect: true,
   
     responsive: [
