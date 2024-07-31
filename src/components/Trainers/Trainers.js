@@ -17,12 +17,12 @@ const Trainers = () => (
     <Container>
       <TrainerCard
        name="Profe Joni"
-        title="Profesor de ed física"
+        title="Profesor de Ed. Física"
         img={TrainerOneBg}
       />
        <TrainerCard
        name="Profe Luz"
-        title="Profesora de ed física"
+        title="Profesora de Ed. Física"
         desc='Estudiante de Kinesiología y Fisioterapia'
         img={TrainerTwoBg}
       />
