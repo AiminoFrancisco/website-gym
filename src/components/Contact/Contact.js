@@ -14,7 +14,7 @@ const Contact = () => (
       <Form />
     </Container>
     <footer>
-      <p>
+      <p style={{marginTop:'30px'}}>
         Copyright &copy;2024 by Francisco Aimino
        
       </p>
