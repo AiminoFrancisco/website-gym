@@ -9,7 +9,7 @@ import TrainerTwoBg from "../Image/profeLuz.png";
 import TrainerThreeBg from "../Image/trainerThree.jpg";
 
 const Trainers = () => (
-  <section style={{backgroundColor:'#272F39'}} css={styles} className="trainers" id="trainers">
+  <section style={{backgroundColor:'#312F36'}} css={styles} className="trainers" id="trainers">
     <h2>
     <span>Profes</span>
     </h2>
@@ -33,6 +33,8 @@ const Trainers = () => (
 const styles = css`
   width: 100%;
   padding: 120px 0;
+  margin-bottom: -2px;
+
   text-align: center;
   h2 {
     color: #232d39;

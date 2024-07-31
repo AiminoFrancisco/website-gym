@@ -6,8 +6,8 @@ import Map from "./Map";
 import Form from "./Form";
 
 const Contact = () => (
-  <section style={{backgroundColor:'#272F39'}} css={styles} className="contact" id="contact">
-    <Container>
+  <section style={{backgroundColor:'#312F36'}} css={styles} className="contact" id="contact">
+    <Container >
       <Map />
       <Form />
     </Container>

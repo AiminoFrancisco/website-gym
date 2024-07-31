@@ -2,15 +2,16 @@
 import { jsx, css } from "@emotion/core";
 import React from "react";
 
-import GymOverlayBg from "../Image/gymOverlayBg.jpg";
 import Carousel from "./carrusel";
+import ImagenFondoConOverlay from "../Main/Foto";
 
 
 const Member = () => (
   <section css={styles} className="member">
+    <ImagenFondoConOverlay /> 
     <div css={contentStylesTitle}>
       <h2 style={{marginRight:'20px', marginLeft:'20px'}}>
-        ¡NO LO <span className="highlight">PIENSAS</span>, EMPEZA <span className="highlight">HOY</span>!
+        ¡NO LO <span className="highlight">PIENSAS MÁS</span>, EMPEZA <span className="highlight">HOY</span>!
       </h2>
     </div>
     <div css={contentStyles}>
@@ -22,19 +23,24 @@ const Member = () => (
         No dejes para mañana lo que puedes comenzar hoy. Tu mejor versión está a un solo paso de distancia. ¡Haz el cambio ahora y vive una vida más saludable y activa!
         <br /><br />
       </p>
+
     </div>
     <Carousel />
   </section>
 );
 
 const styles = css`
+  position: relative;
   width: 100%;
-  padding: 70px 0;
+  padding: 50px 0;
   text-align: center;
-  background: url('${GymOverlayBg}') no-repeat center/cover;
+  overflow-x: hidden;
+    min-height: 100vh; 
 `;
 
 const contentStylesTitle = css`
+  position: relative;
+  z-index: 2;
   width: 80%; /* Aumenta el ancho del título */
   margin: 0 auto;
   text-align: center; /* Centra el título */
@@ -62,6 +68,8 @@ const contentStylesTitle = css`
 `;
 
 const contentStyles = css`
+  position: relative;
+  z-index: 2;
   width: 40%; /* Ajusta el ancho de la descripción para que sea menor que el título */
   margin: 0 auto;
   text-align: left;

@@ -18,24 +18,23 @@ const Carousel = () => {
     centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
-    speed: 1300,
-    autoplaySpeed: 8000,
+    speed: 1300, // Velocidad del desplazamiento
+    autoplaySpeed: 8000, // Tiempo de espera entre desplazamientos
     focusOnSelect: true,
-  
+ 
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
           centerPadding: '0px',
-         
         }
       }
     ]
   };
 
   const cards = [
-    { title: "Evaluación Personalizada: 📈", description: "En el transcurso de la primer semana, realizamos una evaluación completa de tu condición física actual. Esto incluye pruebas de postura, fuerza, coordinación, flexibilidad y análisis de tus objetivos personales. A partir de esta evaluación, diseñamos un plan de entrenamiento ESPECIFICO para vos. ", img: BackgroundImage1 },
+    { title: "Evaluación Personalizada: 📈", description: "En el transcurso de la primer semana, realizamos una evaluación completa de tu condición física actual. Esto incluye pruebas de postura, fuerza, coordinación, flexibilidad y análisis de tus objetivos personales. A partir de esta evaluación, diseñamos un plan de entrenamiento ESPECIFICO para vos.", img: BackgroundImage1 },
     { title: "Entrenamientos a Medida: 🫡", description: "Nuestros entrenamientos son totalmente personalizados. Esto significa que cada plan y sesión de entrenamiento esta adaptada tus objetivos y metas.", img: BackgroundImage2 },
     { title: "Planes de Entrenamiento Flexibles: 🤸🏼", description: "Sabemos que tu tiempo es valioso. Por eso, ofrecemos flexibilidad horaria ajustada a tu rutina diaria. Sin necesidad de sacar previamente turnos.", img: BackgroundImage3 },
     { title: "Asesoramiento y Motivación Continua:💪🏽", description: "Nuestro trabajo es brindarte herramientas y enseñarte técnicas de entrenamiento, corrección postural y estrategias para mantenerte motivado y enfocado en tus objetivos.", img: BackgroundImage4 },
@@ -48,7 +47,7 @@ const Carousel = () => {
         {cards.map((card, index) => (
           <div key={index} className="card" style={{ backgroundImage: `url(${card.img})` }}>
             <h3>{card.title}</h3>
-            <p>{card.description}</p>
+            <p style={{color:'#c5c5c5'}}>{card.description}</p>
           </div>
         ))}
       </Slider>
@@ -58,11 +57,13 @@ const Carousel = () => {
 
 const styles = css`
   .slider {
-    border: 1px solid #fff;
-    border-radius: 19px;
-
-    width: 100%; /* Para asegurar que ocupe todo el ancho disponible */
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Para evitar el desbordamiento horizontal */
+    text-align: center;
+   
   }
+
 
   .slick-slide {
     opacity: 0.5;
@@ -73,16 +74,15 @@ const styles = css`
     transform: scale(1.1);
   }
   .card {
-  
+    position: relative;
     border-radius: 10px;
- 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 80%;  /* Ajusta el ancho de las tarjetas */
+    width: 100%;  /* Ajusta el ancho de las tarjetas */
     height: 300px; /* Ajusta la altura de las tarjetas */
     margin: 0 auto; /* Centra las tarjetas */
     
@@ -99,7 +99,7 @@ const styles = css`
     }
 
     @media (max-width: 768px) {
-      width: 100%;  /* Ajusta el ancho de las tarjetas para móviles */
+      width: 80%;  /* Ajusta el ancho de las tarjetas para móviles */
       height: 200px; /* Ajusta la altura de las tarjetas para móviles */
       h3 {
         font-size: 18px; /* Ajusta el tamaño de la fuente para móviles */
