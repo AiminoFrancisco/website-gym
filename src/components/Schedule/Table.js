@@ -95,7 +95,7 @@ const styles = css`
   background-color: #333; /* Color de fondo de la tabla */
 
   th, td {
-    border: 1px solid #fff;
+    border: 1px solid #2F3B46;
     padding: 15px;
     text-align: left;
   }
