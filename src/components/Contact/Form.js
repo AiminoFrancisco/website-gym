@@ -11,6 +11,7 @@ import {
   faWhatsapp,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
+import Opinion from "./opinion";
 
 
 const Form = ({ text }) => (
@@ -70,7 +71,9 @@ const Form = ({ text }) => (
         </div>
       </a>
     </div>
+    
   </div>
+
 </div>
 );
 

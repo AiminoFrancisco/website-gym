@@ -11,7 +11,7 @@ const Member = () => (
     <ImagenFondoConOverlay /> 
     <div css={contentStylesTitle}>
       <h2 style={{marginRight:'20px', marginLeft:'20px'}}>
-        ¡NO LO <span className="highlight">PIENSAS MÁS</span>, EMPEZA <span className="highlight">HOY</span>!
+        ¡NO LO <span className="highlight">PENSES MÁS</span>, EMPEZA <span className="highlight">HOY</span>!
       </h2>
     </div>
     <div css={contentStyles}>

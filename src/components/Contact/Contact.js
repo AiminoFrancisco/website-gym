@@ -4,11 +4,13 @@ import React from "react";
 import Container from "../GlobalComponents/Container";
 import Map from "./Map";
 import Form from "./Form";
+import Carousel from "../Member/carrusel";
 
 const Contact = () => (
   <section style={{backgroundColor:'#312F36'}} css={styles} className="contact" id="contact">
     <Container >
       <Map />
+    
       <Form />
     </Container>
     <footer>
