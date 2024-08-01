@@ -16,7 +16,7 @@ import Opinion from "./opinion";
 
 const Form = ({ text }) => (
   <div className="linksContainer">
-     <h1 style={{color:'#fff', margin:'9px', marginTop:'40px'}} >Contactanos a travez de nuestros enlaces directos!</h1>
+     <h1 style={{color:'#fff', margin:'9px', marginTop:'190px'}} >Contactanos a travez de nuestros enlaces directos!</h1>
   <div className="social-icons-wrapper">
   
    
