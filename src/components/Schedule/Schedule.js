@@ -38,8 +38,8 @@ const styles = css`
   position: relative;
   width: 100%;
   padding-top: 120px;
-  
-  min-height: 98vh;
+  margin-bottom: -10px;
+  min-height: 100vh;
   text-align: center;
 `;
 

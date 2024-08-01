@@ -4,11 +4,11 @@ import React from "react";
 import Container from "../GlobalComponents/Container";
 import Map from "./Map";
 import Form from "./Form";
-import Carousel from "../Member/carrusel";
-import Opinion from "./opinion";
+import ImagenFondoConOverlayCinco from "./fotocinco";
 
 const Contact = () => (
   <section css={styles} className="contact" id="contact">
+    <ImagenFondoConOverlayCinco />
     <Container>
       <div className="content">
         <Map className="map" />
@@ -18,35 +18,22 @@ const Contact = () => (
       </div>
     </Container>
     <footer>
-      <p>
-        Copyright &copy;2024 by Francisco Aimino
-      </p>
+      <p>Copyright &copy;2024 by Francisco Aimino</p>
     </footer>
   </section>
 );
 
 const styles = css`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  position: relative; /* Añadido para posicionar los elementos correctamente */
   width: 100%;
-  background-color: #312F36;
-
-  .container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-  }
 
   .content {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center; /* Centra verticalmente los elementos hijos */
+    padding: 20px 0; /* Ajusta el padding si es necesario */
+
   }
 
   .map {
@@ -57,7 +44,6 @@ const styles = css`
     display: flex;
     align-items: center; /* Centra el formulario verticalmente dentro del contenedor */
     width: 40%;
-    height: 100%;
   }
 
   .form {
@@ -78,6 +64,7 @@ const styles = css`
     .content {
       flex-direction: column;
       align-items: center;
+      padding: 0; /* Elimina el padding si es necesario en pantallas pequeñas */
     }
 
     .map, .form-container {
@@ -86,10 +73,6 @@ const styles = css`
 
     footer {
       padding-top: 20px;
-    }
-
-    .container {
-      padding: 0px;
     }
   }
 `;

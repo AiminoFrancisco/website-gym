@@ -5,7 +5,7 @@ import Opinion from "./opinion";
 
 const Map = () => (
   <div css={styles} className="mapouter">
-    <h3 className="map-title">Reseñas y Opiniones</h3>
+    <h3 style={{marginTop:'40px'}} className="map-title">Reseñas y Opiniones</h3>
     <div style={{ marginBottom: '30px', marginTop: '20px'}}>
       <Opinion />
     </div>

@@ -6,35 +6,39 @@ import TrainerCard from "./TrainerCard";
 import Container from "../GlobalComponents/Container";
 import TrainerOneBg from "../Image/profejoni.png";
 import TrainerTwoBg from "../Image/profeLuz.png";
-import TrainerThreeBg from "../Image/trainerThree.jpg";
+import ImagenFondoConOverlayCuatro from "./fotocuatro";
 
 const Trainers = () => (
-  <section style={{ backgroundColor: '#312F36' }} css={styles} className="trainers" id="trainers">
-    <h2>
-      <span>Profes</span>
-    </h2>
-
-    <Container>
-      <TrainerCard
-        name="Profe Joni"
-        title="Profesor de Ed. Física"
-        img={TrainerOneBg}
-      />
-      <TrainerCard
-        name="Profe Luz"
-        title="Profesora de Ed. Física"
-        desc='Estudiante de Kinesiología y Fisioterapia'
-        img={TrainerTwoBg}
-      />
-    </Container>
+  <section css={styles} className="trainers" id="trainers">
+    <ImagenFondoConOverlayCuatro />
+    <div className="content">
+      <h2>
+        <span>Profes</span>
+      </h2>
+      <Container>
+        <TrainerCard
+          name="Profe Joni"
+          title="Profesor de Ed. Física"
+          img={TrainerOneBg}
+        />
+        <TrainerCard
+          name="Profe Luz"
+          title="Profesora de Ed. Física"
+          desc="Estudiante de Kinesiología y Fisioterapia"
+          img={TrainerTwoBg}
+        />
+      </Container>
+    </div>
   </section>
 );
 
 const styles = css`
+  position: relative; /* Asegúrate de que el contenedor principal tenga position relative */
   width: 100%;
   padding: 120px 0;
   margin-bottom: -2px;
   text-align: center;
+  z-index: 0; /* Asegúrate de que tenga un z-index correcto */
 
   h2 {
     color: #232d39;
@@ -44,23 +48,20 @@ const styles = css`
     line-height: 1;
 
     span {
-      color: #88C7BE;
+      color: #88c7be;
     }
   }
 
-  > p {
-    color: #7a7a7a;
-    font-size: 16px;
-    line-height: 1.7;
+  .content {
+    position: relative; /* Esto es para que los elementos dentro de .content se muestren sobre el fondo */
+    z-index: 1;
   }
 
   .container {
     display: flex;
-    justify-content: space-around; /* Cambiado de space-between a space-around */
+    justify-content: space-around;
     align-items: center;
     padding: 50px 0 0 0;
-
-   
   }
 
   @media (max-width: 650px) {
