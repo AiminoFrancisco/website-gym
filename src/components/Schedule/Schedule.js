@@ -16,7 +16,7 @@ const Schedule = () => {
     <section css={styles} className="schedule" id="schedule">
       <ImagenFondoConOverlayTres />
       <div css={contentStyles}>
-        <img src={logoHealth} alt="HealtLogo" style={{ height: '100px' }} />
+        <img src={logoHealth} alt="HealtLogo" style={{ height: '150px' }} />
         <h2>
           HORARIOS <span>HEALTH</span>
         </h2>

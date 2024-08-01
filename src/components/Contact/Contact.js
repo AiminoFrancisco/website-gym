@@ -5,13 +5,16 @@ import Container from "../GlobalComponents/Container";
 import Map from "./Map";
 import Form from "./Form";
 import Carousel from "../Member/carrusel";
+import Opinion from "./opinion";
 
 const Contact = () => (
   <section css={styles} className="contact" id="contact">
     <Container>
       <div className="content">
         <Map className="map" />
-        <Form className="form" />
+        <div className="form-container">
+          <Form className="form" />
+        </div>
       </div>
     </Container>
     <footer>
@@ -28,7 +31,7 @@ const styles = css`
   min-height: 100vh;
   width: 100%;
   background-color: #312F36;
-  
+
   .container {
     flex-grow: 1;
     display: flex;
@@ -43,15 +46,22 @@ const styles = css`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Centra verticalmente los elementos hijos */
   }
 
   .map {
     width: 60%;
   }
 
-  .form {
+  .form-container {
+    display: flex;
+    align-items: center; /* Centra el formulario verticalmente dentro del contenedor */
     width: 40%;
+    height: 100%;
+  }
+
+  .form {
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho del contenedor */
   }
 
   footer {
@@ -70,18 +80,17 @@ const styles = css`
       align-items: center;
     }
 
-    .map, .form {
+    .map, .form-container {
       width: 95%;
     }
 
     footer {
       padding-top: 20px;
     }
-        .container {
-   
-    padding: 0px;
 
-  }
+    .container {
+      padding: 0px;
+    }
   }
 `;
 

@@ -17,7 +17,7 @@ const Opinion = () => {
   const settings = {
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
+    slidesToShow: 1,
     autoplay: true,
     speed: 1300, // Velocidad del desplazamiento
     autoplaySpeed: 4000, // Tiempo de espera entre desplazamientos

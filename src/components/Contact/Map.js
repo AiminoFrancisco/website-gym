@@ -29,7 +29,7 @@ const Map = () => (
 const styles = css`
   width: 90%;
   max-width: 60%;
-  min-height: 70vh;
+  min-height: 50vh;
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   
   .map-title {
@@ -47,7 +47,7 @@ const styles = css`
     border: none;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 800px) {
     max-width: 100%;
     height: 78vh;
   }
