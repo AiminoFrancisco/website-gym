@@ -20,13 +20,14 @@ const Map = () => (
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
+    
     </div>
    
   </div>
 );
 
 const styles = css`
-  width: 80%;
+  width: 90%;
   max-width: 60%;
   min-height: 70vh;
   margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -48,7 +49,7 @@ const styles = css`
 
   @media (max-width: 1200px) {
     max-width: 100%;
-    height: 70vh;
+    height: 78vh;
   }
 `;
 

@@ -72,7 +72,7 @@ const contentStyles = css`
 
   @media (max-width: 640px) {
     p {
-      padding: 0 30px;
+  margin:25px;
       br {
         display: none;
       }

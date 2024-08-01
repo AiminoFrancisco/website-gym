@@ -26,7 +26,7 @@ const backgroundStyles = css`
   }
 
   @media (max-width: 768px) {
-    height: 100vh;
+    height: 110vh;
     img {
       object-fit: cover;
     }

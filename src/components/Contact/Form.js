@@ -16,7 +16,7 @@ import Opinion from "./opinion";
 
 const Form = ({ text }) => (
   <div className="linksContainer">
-     <h1 style={{color:'#fff', margin:'9px'}} >Contactanos a travez de nuestros enlaces directos !</h1>
+     <h1 style={{color:'#fff', margin:'9px'}} >Contactanos a travez de nuestros enlaces directos!</h1>
   <div className="social-icons-wrapper">
   
    
@@ -62,7 +62,7 @@ const Form = ({ text }) => (
         </div>
         <div className="contactLinksGitHub">
           <a
-            href="https://github.com/AiminoFrancisco"
+            href="https://www.instagram.com/healthtraining_ok/"
             target="_blank"
             rel="noopener noreferrer"
           >

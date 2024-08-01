@@ -74,7 +74,7 @@ const contentStyles = css`
   margin: 0 auto;
   text-align: left;
   color: #fff;
-
+ text-align: left;
   p {
     font-size: 16px;
     line-height: 1.7;
@@ -94,8 +94,6 @@ const contentStyles = css`
       }
     }
 
-    text-align: justify;
-    text-justify: inter-word;
 
     .highlight {
       text-decoration: underline;
@@ -106,6 +104,7 @@ const contentStyles = css`
   @media (max-width: 850px) {
     width: 100%;
     text-align: center;
+     text-align: left;
 
     p {
       font-size: 14px;

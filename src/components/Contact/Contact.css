@@ -59,9 +59,35 @@
     border-bottom:1px solid  #40BF50;
   }
   
+  /* Agrega esta regla CSS a tu hoja de estilos */
+a:visited {
+  color: inherit; /* Mantiene el color heredado del enlace */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
   
-  
-  
+  /* Agrega estas reglas CSS a tu hoja de estilos */
+
+/* Define el estilo general para todos los estados del enlace */
+.social-icon-item a {
+  color: #C13584; /* Color del enlace */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Define el estilo para el enlace visitado */
+.social-icon-item a:visited {
+  color: #ffffff; /* Mantén el mismo color para los enlaces visitados */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Opcionalmente, puedes definir estilos para otros estados */
+.social-icon-item a:hover,
+.social-icon-item a:focus,
+.social-icon-item a:active {
+  color: #ffffff; /* Color del enlace en hover, focus y active */
+  text-decoration: underline; /* Subrayado opcional en hover, focus, y active */
+}
+
   
   .contactDescargarImg{
     display: inline-block;
@@ -94,6 +120,7 @@
   
   .github-link a:hover {
     color: #C13584; /* Negro de GitHub */
+    
   }
   
   .whatsapp-link a:hover {
