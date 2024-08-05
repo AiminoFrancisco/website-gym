@@ -1,0 +1,49 @@
+/* AccordionItem.css */
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background: #c5c5c5;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .accordion-header.active {
+    background: #e1e1e1;
+  }
+  
+  .toggle-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon.open {
+    transform: rotate(45deg);
+  }
+  
+  .accordion-body {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .accordion-body.open {
+    max-height: 1000px; /* Ajusta según el contenido máximo que esperas */
+    opacity: 1;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Opcional: oculta cualquier contenido que sobresalga */
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  

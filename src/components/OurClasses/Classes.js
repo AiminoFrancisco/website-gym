@@ -5,70 +5,89 @@ import Icon from "../GlobalComponents/Icon";
 import LinksContainer from "./LinksContainer";
 import Results from "./Results";
 import Container from "../GlobalComponents/Container";
+import AccordionChallenge from "./AcrodionChallenge";
+import ImagenFondoConOverlayCuatro from "../Trainers/fotocuatro";
+
 
 const Classes = ({ text }) => {
-  const [training, setTraining] = useState("FirstClass");
+
 
   return (
     <section css={styles} className="ourClasses" id="ourClasses">
-      <h2>
-        OUR <span>CLASSES</span>
+      <ImagenFondoConOverlayCuatro></ImagenFondoConOverlayCuatro>
+      <h2 style={{marginBottom:'20px'}}>
+      Echa un Vistazo a <span> Nuestros Entrenamientos</span>
       </h2>
-      <Icon />
-      <p>
-        Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
-        <br />
-        ipsum dolor, ultricies fermentum massa consequat eu.
-      </p>
-      <Container>
+    
+
+<AccordionChallenge></AccordionChallenge>
+
+      {/* <Container>
         <LinksContainer setTraining={setTraining} training={training} />
         <Results training={training} />
-      </Container>
+      </Container> */}
     </section>
   );
 };
 
 const styles = css`
+  position: relative; /* Asegúrate de que el contenedor principal tenga position relative */
   width: 100%;
-  padding: 100px 0;
+  padding: 120px 0;
+  margin-bottom: -2px;
   text-align: center;
+  z-index: 0; /* Asegúrate de que tenga un z-index correcto */
+
   h2 {
-    color: #232d39;
-    font-size: 26px;
+    color: #FFF;
     font-weight: 900;
+    font-size: 36px;
+    letter-spacing: 1.3px;
     line-height: 1;
+
     span {
-      color: #88C7BE;
+      color: #88c7be;
     }
+    
   }
-  p {
-    color: #7a7a7a;
-    font-size: 15px;
-    line-height: 1.7;
+  P {
+          color: #FFF;
+          margin: 20px
+      }
+  .content {
+    position: relative; /* Esto es para que los elementos dentro de .content se muestren sobre el fondo */
+    z-index: 1;
   }
+
   .container {
     display: flex;
-    justify-content: space-between;
-    padding: 80px 0 0 0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0 0 0;
   }
-  @media (max-width: 900px) {
-    .container {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media (max-width: 580px) {
-    p {
-      padding: 0 20px;
+
+  @media (max-width: 650px) {
+    > p {
+      padding: 0 30px;
+
       br {
         display: none;
       }
     }
   }
-  @media (min-width: 901px) and (max-width: 1226px) {
-    .container{
+
+  @media (max-width: 830px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 831px) and (max-width: 1226px) {
+    .container {
+      flex-wrap: wrap;
       justify-content: space-between;
-      max-width: 90%;
+      max-width: 780px;
     }
   }
 `;
