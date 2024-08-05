@@ -16,7 +16,7 @@ const Classes = ({ text }) => {
     <section css={styles} className="ourClasses" id="ourClasses">
       <ImagenFondoConOverlayCuatro></ImagenFondoConOverlayCuatro>
       <h2 style={{marginBottom:'20px'}}>
-      Echa un Vistazo a <span> Nuestros Entrenamientos</span>
+      Estos son algunos de  <span>Nuestros entrenamientos</span>
       </h2>
     
 

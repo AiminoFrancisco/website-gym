@@ -2,8 +2,8 @@
 .accordion-header {
     cursor: pointer;
     padding: 10px;
-    background: #c5c5c5;
-    border: 1px solid #ddd;
+    background: #d6d5d5;
+  
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
