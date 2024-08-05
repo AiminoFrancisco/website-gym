@@ -1,5 +1,5 @@
 .accordionChallenge {
-    width: 50%; /* Establece el ancho del acordeón al 60% */
+    width: 70%; /* Establece el ancho del acordeón al 60% */
     max-width: 100%; /* Asegúrate de que no exceda el ancho del contenedor */
     margin: 0 auto; /* Centra el acordeón horizontalmente */
     border-radius: 8px;

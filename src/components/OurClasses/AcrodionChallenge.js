@@ -15,7 +15,7 @@ const AccordionChallenge = () => {
       <div className="accordionChallenge">
         
         <AccordionItem
-          title="Custom Hooks Debounce"
+     
           date="2024-08-05"
           isOpen={openIndex === 0}
           onClick={() => handleToggle(0)}
