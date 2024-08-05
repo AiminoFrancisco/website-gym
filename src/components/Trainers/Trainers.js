@@ -55,6 +55,10 @@ const styles = css`
   .content {
     position: relative; /* Esto es para que los elementos dentro de .content se muestren sobre el fondo */
     z-index: 1;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .container {
